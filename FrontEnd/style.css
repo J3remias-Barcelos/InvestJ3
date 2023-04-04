@@ -47,7 +47,9 @@ main {
     flex-wrap: wrap;
 }
 
-.divDesc, .divType, .divAmount {
+.divDesc,
+.divType,
+.divAmount {
     display: flex;
     flex-direction: column;
 
@@ -63,7 +65,8 @@ main {
     height: 34px;
 }
 
-input, select {
+input,
+select {
     padding: 5px;
 }
 

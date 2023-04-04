@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestJ3</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com./boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="resume">
+            <div>
+                Entradas: R$
+                <span class="incomes">0.00</span>
+            </div>
+            <div>
+                Saídas: R$
+                <span class="expense">0.00</span>
+            </div>
+            <div>
+                Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <div>
+            <div class="newItem">
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc" placeholder="Descrição">
+                </div>
+                <div class="divAmount">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" placeholder="Valor">
+                </div>
+                <div class="divType">
+                    <label for="type">Tipo</label>
+                    <select name="type" id="type">
+                        <option value="income">Entrada</option>
+                        <option value="expense">Saída</option>
+                    </select>
+                </div>
+                <button id="btnNew">Incluir</button>
+            </div>
+            <div class="divTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="columnAmount">Valor</th>
+                            <th class="columnType">Tipo</th>
+                            <th class="columnAction"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
